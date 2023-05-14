@@ -4,7 +4,7 @@ const btnStart = document.querySelector('[data-start]');
 const btnStop = document.querySelector('[data-stop]');
 const bodyEL = document.body;
 const timeInterval = 1000;
-btnStop.disabled = true;
+// btnStop.disabled = true;
 
 let intrl = null
 
