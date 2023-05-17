@@ -53,8 +53,8 @@ function createTimer() {
 }
 
 
-function clearTimer() {
-  clearTimer(interval);
+function offTimer() {
+  clearInterval(interval);
 }
 
 function calculateDate() {
@@ -63,7 +63,7 @@ function calculateDate() {
   const timeDifference = selectedDate - now;
   const timeLeftObj = convertMs(timeDifference);
   if (timeDifference < TIMER_INTERVAL) {
-    clearTimer();
+    offTimer();
   }
   return timeLeftObj;
 }
